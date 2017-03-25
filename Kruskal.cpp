@@ -13,6 +13,7 @@ char Root_find(char a){
 	return (Root_find(parent[a]));	
 	}	
 }
+
 int Union(char a, char b){
 	if(rank[a] > rank[b]){
 		parent[b] = a;
@@ -24,6 +25,7 @@ int Union(char a, char b){
 	}
 	return 0;
 }
+
 main(){
 return 0;
 }
